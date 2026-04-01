@@ -17,8 +17,7 @@ export const api = async (url, method = "GET", data = null) => {
   }
  
   console.log("API call to:", url, "with token:", token);
-  const res = await fetch(`http://localhost:5000/api${url}`, options);
-
+  const res = await fetch(`${BASE_URL}${url}`, options);
   if (!res.ok) {
     // Optional: throw error with status
     throw new Error(`API error! Status: ${res.status}`);
