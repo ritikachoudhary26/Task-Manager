@@ -17,7 +17,7 @@ app.use(cookieParser());
 // ⚠️ IMPORTANT: Allow deployed frontend
 app.use(
   cors({
-    origin: "*",
+    origin: "https://task-manager-fawn-mu.vercel.app",
     credentials: true,
   })
 );
